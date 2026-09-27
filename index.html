@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Hindi Tips - होम पेज</title>
-    <meta name="description" content="Tech Hindi Tips par aapka swagat hai. Yahan aapko android aur smartphone se judi behtareen technical guides milengi.">
+    <title>Tech Hindi Tips - सभी ब्लॉग्स</title>
+    <meta name="description" content="Tech Hindi Tips पर एंड्रॉइड और स्मार्टफोन से जुड़ी बेहतरीन टेक्निकल गाइड्स पढ़ें।">
     <style>
         :root {
             --primary-color: #1a73e8;
@@ -23,60 +23,21 @@
         header {
             background: var(--primary-color);
             color: white;
-            padding: 40px 20px;
+            padding: 30px 20px;
             text-align: center;
         }
         header h1 {
             margin: 0;
-            font-size: 32px;
+            font-size: 28px;
         }
         header p {
-            margin: 10px 0 0;
-            font-size: 16px;
+            margin: 5px 0 0;
+            font-size: 14px;
         }
         .container {
-            max-width: 900px;
-            margin: 40px auto;
+            max-width: 800px;
+            margin: 30px auto;
             padding: 0 15px;
-            text-align: center;
-        }
-        .welcome-box {
-            background: var(--card-bg);
-            padding: 40px 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            margin-bottom: 30px;
-        }
-        .welcome-box h2 {
-            color: var(--primary-color);
-            margin-top: 0;
-        }
-        .btn {
-            display: inline-block;
-            background: var(--primary-color);
-            color: white;
-            padding: 12px 25px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 18px;
-            margin-top: 20px;
-            transition: background 0.2s;
-            cursor: pointer;
-            border: none;
-        }
-        .btn:hover {
-            background: #1557b0;
-        }
-        /* Yeh section button click karne par khulega aur blogs load karega */
-        #blogs-section {
-            display: none;
-            text-align: left;
-            margin-top: 40px;
-        }
-        #blogs-section h3 {
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
-            color: var(--primary-color);
         }
         .post-card {
             background: var(--card-bg);
@@ -86,23 +47,28 @@
             margin-bottom: 25px;
             display: flex;
             flex-direction: column;
+            transition: transform 0.2s;
+        }
+        .post-card:hover {
+            transform: translateY(-3px);
         }
         .blog-image {
             width: 100%;
-            height: 250px;
+            height: 220px;
             object-fit: cover;
         }
         .post-content {
             padding: 20px;
         }
-        .post-content h4 {
+        .post-content h2 {
             margin-top: 0;
+            font-size: 20px;
         }
-        .post-content h4 a {
+        .post-content h2 a {
             text-decoration: none;
             color: var(--primary-color);
         }
-        .post-content h4 a:hover {
+        .post-content h2 a:hover {
             text-decoration: underline;
         }
         .read-more {
@@ -124,66 +90,42 @@
             font-size: 14px;
         }
     </style>
-    <script>
-        function showBlogs() {
-            var section = document.getElementById("blogs-section");
-            var btn = document.getElementById("toggle-btn");
-            if (section.style.display === "none") {
-                section.style.display = "block";
-                btn.innerText = "ब्लॉग्स छुपाएं ▲";
-                section.scrollIntoView({ behavior: 'smooth' });
-            } else {
-                section.style.display = "none";
-                btn.innerText = "सभी ब्लॉग्स देखें ▼";
-            }
-        }
-    </script>
 </head>
 <body>
 
     <header>
         <h1>Tech Hindi Tips</h1>
-        <p>Smartphone aur technology se jude aasan aur asardaar samadhan</p>
+        <p>स्मार्टफोन और तकनीक से जुड़े आसान समाधान</p>
     </header>
 
-    <div class="container">
-        
-        <!-- Sirf Website ka Introduction aur Button -->
-        <div class="welcome-box">
-            <h2>Hamari website par aapka swagat hai!</h2>
-            <p>Yahan aapko android secret settings, hidden features, aur mobile performance ko behtar banane se judi behtareen jankariyan milengi. Neeche diye gaye button par click karke aap hamare saare blogs load karke dekh sakte hain.</p>
-            <button id="toggle-btn" onclick="showBlogs()" class="btn">सभी ब्लॉग्स देखें ▼</button>
-        </div>
-
-        <!-- Button dabane par yeh blogs load hokar dikhenge -->
-        <div id="blogs-section">
-            <h3>Hamare Sabhi Blogs</h3>
-            
-            <div class="post-card">
-                <img src="YOUR_PHONE_OVERVIEW_SCREENSHOT_LINK" alt="Android Hidden Settings" class="blog-image">
-                <div class="post-content">
-                    <h4><a href="android-hidden-settings.html">Android ki 7 Hidden Settings jo aapka phone istemal karne ka tarika badal sakti hain</a></h4>
-                    <p>Aajkal android phone me aisi kai settings maujood hain jinke baare me jyadatar users ko pata nahi hota...</p>
-                    <a href="android-hidden-settings.html" class="read-more">Pura Padhein &raquo;</a>
-                </div>
-            </div>
-
-            <div class="post-card">
-                <img src="YOUR_BLOG2_IMAGE_LINK" alt="Blog 1 Image" class="blog-image">
-                <div class="post-content">
-                    <h4><a href="Blog1.html">Yahan apne naye blog ka title likhein (Blog1.html)</a></h4>
-                    <p>Is naye blog ki choti jankari ya description yahan dikhegi taaki users padh sakein...</p>
-                    <a href="Blog1.html" class="read-more">Pura Padhein &raquo;</a>
-                </div>
-            </div>
-
-        </div>
-
+    <div class="container" id="blogs-container">
+        <!-- JavaScript यहाँ अपने आप सारे ब्लॉग्स लोड कर देगी -->
     </div>
 
     <footer>
-        <p>&copy; 2026 Tech Hindi Tips. Sabhi adhikar surakshit hain.</p>
+        <p>&copy; 2026 Tech Hindi Tips. सभी अधिकार सुरक्षित हैं।</p>
     </footer>
+
+    <!-- यहाँ posts.js फाइल को जोड़ा गया है -->
+    <script src="posts.js"></script>
+    <script>
+        const container = document.getElementById("blogs-container");
+        
+        // loop चलाकर सभी ब्लॉग्स को होम पेज पर दिखाना
+        blogPosts.forEach(post => {
+            const card = document.createElement("div");
+            card.className = "post-card";
+            card.innerHTML = `
+                <img src="${post.image}" alt="${post.title}" class="blog-image">
+                <div class="post-content">
+                    <h2><a href="${post.link}">${post.title}</a></h2>
+                    <p>${post.description}</p>
+                    <a href="${post.link}" class="read-more">पूरा पढ़ें &raquo;</a>
+                </div>
+            `;
+            container.appendChild(card);
+        });
+    </script>
 
 </body>
 </html>
