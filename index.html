@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Hindi Tips - होम पेज</title>
-    <meta name="description" content="Tech Hindi Tips पर आपका स्वागत है। यहाँ आपको एंड्रॉइड और स्मार्टफोन से जुड़ी बेहतरीन टेक्निकल गाइड्स और टिप्स मिलेंगी।">
+    <meta name="description" content="Tech Hindi Tips par aapka swagat hai. Yahan aapko android aur smartphone se judi behtareen technical guides milengi.">
     <style>
         :root {
             --primary-color: #1a73e8;
@@ -61,11 +61,13 @@
             font-size: 18px;
             margin-top: 20px;
             transition: background 0.2s;
+            cursor: pointer;
+            border: none;
         }
         .btn:hover {
             background: #1557b0;
         }
-        /* ब्लॉग सेक्शन जो शुरू में छिपा रहेगा और बटन दबाने पर दिखेगा */
+        /* Yeh section button click karne par khulega aur blogs load karega */
         #blogs-section {
             display: none;
             text-align: left;
@@ -141,40 +143,46 @@
 
     <header>
         <h1>Tech Hindi Tips</h1>
-        <p>स्मार्टफोन और तकनीक से जुड़े आसान और असरदार समाधान</p>
+        <p>Smartphone aur technology se jude aasan aur asardaar samadhan</p>
     </header>
 
     <div class="container">
         
-        <!-- वेबसाइट के बारे में परिचय बॉक्स -->
+        <!-- Sirf Website ka Introduction aur Button -->
         <div class="welcome-box">
-            <h2>हमारी वेबसाइट पर आपका स्वागत है!</h2>
-            <p>यहाँ आपको एंड्रॉइड सीक्रेट सेटिंग्स, हिडन फीचर्स, और मोबाइल परफॉर्मेंस को बेहतर बनाने से जुड़ी बेहतरीन जानकारियां हिंदी में मिलेंगी। हमारा मकसद आपको तकनीक से जुड़ी हर बात सरल भाषा में समझाना है।</p>
-            <p>नीचे दिए गए बटन पर क्लिक करके हमारे सभी लेटेस्ट ब्लॉग आर्टिकल्स देख सकते हैं।</p>
+            <h2>Hamari website par aapka swagat hai!</h2>
+            <p>Yahan aapko android secret settings, hidden features, aur mobile performance ko behtar banane se judi behtareen jankariyan milengi. Neeche diye gaye button par click karke aap hamare saare blogs load karke dekh sakte hain.</p>
             <button id="toggle-btn" onclick="showBlogs()" class="btn">सभी ब्लॉग्स देखें ▼</button>
         </div>
 
-        <!-- सारे ब्लॉग्स की लिस्ट (शुरू में छिपी रहेगी) -->
+        <!-- Button dabane par yeh blogs load hokar dikhenge -->
         <div id="blogs-section">
-            <h3>हमारे लेटेस्ट ब्लॉग पोस्ट्स</h3>
+            <h3>Hamare Sabhi Blogs</h3>
             
             <div class="post-card">
                 <img src="YOUR_PHONE_OVERVIEW_SCREENSHOT_LINK" alt="Android Hidden Settings" class="blog-image">
                 <div class="post-content">
-                    <h4><a href="android-hidden-settings.html">Android की 7 Hidden Settings जो आपका फोन इस्तेमाल करने का तरीका बदल सकती हैं</a></h4>
-                    <p>आजकल Android फोन में ऐसी कई settings मौजूद हैं जिनके बारे में ज्यादातर users को पता ही नहीं होता। इनमें से कुछ settings फोन को ज्यादा responsive महसूस करा सकती हैं...</p>
-                    <a href="android-hidden-settings.html" class="read-more">पूरा पढ़ें &raquo;</a>
+                    <h4><a href="android-hidden-settings.html">Android ki 7 Hidden Settings jo aapka phone istemal karne ka tarika badal sakti hain</a></h4>
+                    <p>Aajkal android phone me aisi kai settings maujood hain jinke baare me jyadatar users ko pata nahi hota...</p>
+                    <a href="android-hidden-settings.html" class="read-more">Pura Padhein &raquo;</a>
                 </div>
             </div>
 
-            <!-- भविष्य में जब आप और ब्लॉग जोड़ेंगे, तो उन्हें यहाँ इसी तरह जोड़ सकते हैं -->
+            <div class="post-card">
+                <img src="YOUR_BLOG2_IMAGE_LINK" alt="Blog 1 Image" class="blog-image">
+                <div class="post-content">
+                    <h4><a href="Blog1.html">Yahan apne naye blog ka title likhein (Blog1.html)</a></h4>
+                    <p>Is naye blog ki choti jankari ya description yahan dikhegi taaki users padh sakein...</p>
+                    <a href="Blog1.html" class="read-more">Pura Padhein &raquo;</a>
+                </div>
+            </div>
 
         </div>
 
     </div>
 
     <footer>
-        <p>&copy; 2026 Tech Hindi Tips. सभी अधिकार सुरक्षित हैं।</p>
+        <p>&copy; 2026 Tech Hindi Tips. Sabhi adhikar surakshit hain.</p>
     </footer>
 
 </body>
